@@ -1,0 +1,6 @@
+Script to find all words, that somehow lead to Robert - my name, e.g. Euro.
+Some friends of mine create funny nicknames from such names.
+
+No tests, no documentation, a bit clean code, no external dependencies.
+
+Example data from: https://sourceforge.net/projects/germandict/files/

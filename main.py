@@ -1,5 +1,3 @@
-# Script to find all words, that somehow lead to Robert - my name, e.g. Euro.
-# Some friends of mine create funny nicknames from such names
 import os
 
 
