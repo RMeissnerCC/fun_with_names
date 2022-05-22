@@ -14,10 +14,22 @@ def words() -> list[str]:
     return _output
 
 
-def main():
-    _word = words()
-    print(_word)
+def clean_words(_words: list[str]) -> list[str]:
+    return [word.replace("\n", "").lower() for word in _words]
 
+
+def name_match(name: str, _words: list[str]) -> list[str]:
+    return [word for word in _words if name[0:2] in word and name[0:2] in word[-3:]]
+
+
+def main(name: str):
+    _word = clean_words(words())
+    print(len(_word))
+    matches = name_match(name, _word)
+    print(matches, len(matches))
+
+
+NAME_TO_CHECK = "robert".lower()
 
 if __name__ == '__main__':
-    main()
+    main(NAME_TO_CHECK)
